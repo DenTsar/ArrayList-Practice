@@ -12,4 +12,11 @@ public class ArrayListMethods{
 			System.out.print(a.get(i)+", ");
 		System.out.println(a.get(a.size()-1));
 	}
+	public static ArrayList<Integer> removeDuplicates(ArrayList<Integer> a){
+		for(int i = a.size()-2; i>-1; i--)
+			for(int j = i+1; j<a.size(); j++)
+				if(a.get(i)==a.get(j))
+					a.remove(i);
+		return a;
+	}
 }
