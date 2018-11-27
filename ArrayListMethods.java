@@ -7,4 +7,9 @@ public class ArrayListMethods{
 			a.add(b.get(i));
 		return a;
 	}
+	public static void print(ArrayList<Integer> a){
+		for(int i = 0; i<a.size()-1; i++)
+			System.out.print(a.get(i)+", ");
+		System.out.println(a.get(a.size()-1));
+	}
 }
